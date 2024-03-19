@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+html, body {
+    overflow-x: hidden;
+}
+html, body, .grid-container {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container {
+    position: relative;
+    max-width: 95%;
+    height: 90%;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    min-height: 850px;
+    height: auto;
+}
+.grid-item {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+nav ul {
+    display: flex;
+    list-style-type: none; /* Remove bullet points from list */
+    padding: 0; /* Remove default padding */
+    width: 100%;
+    justify-content: center; /* Ensure the ul covers the full width of the nav */ /* This will space out the li items */
+}
+nav {
+    position: relative;
+    width: 100%;   
+}
+nav ul li {
+    display: inline-block;
+    font-size: 1.1em;
+    font-family: Source Code Pro;
+    color: #FFFFFF;
+    margin-right: 1em;
+
+}
+
+nav ul li a:hover {
+    color: #AEEAEA;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+.nav-content {
+    margin-top: -3em;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row: 2;
+    text-align: center;
+}
+.main-content {
+    margin-top: -3em;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.header-content {
+    grid-column-start:1;
+    grid-column-end: 6;
+    grid-row: 1;
+}
+.footer-content {
+    position: absolute;
+    bottom: 0; /* Align to the bottom of the .grid-container */
+    left: 0; /* Align to the left of the .grid-container */
+    width: 100%; /* Span the full width of the .grid-container */
+    height: 100%; /* Set the height of the footer */
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row: 5;
+}
+#header {
+    width: 100%;
+    text-align: center;
+    font-family: Source Code Pro;
+    color: #63B3B7
+}
+#header h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    padding-bottom: 10px;    
+}
+#section1, #section2, #section3, #section4, .footer-content {
+    font-family: Encode Sans Expanded;
+    font-weight: 300;
+    color: #BEEEEE;
+}
+#section2 {
+    margin-top: 1em;
+}
+#section3 {
+    margin-top: 1em;
+}
+#section4 {
+    margin-top: 1em;
+}
+
+body {
+    background-color: #172A3A;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.content-wrap {
+    flex: 1;
+}
+footer {
+    font-family: Source Code Pro;
+    color: #09BC8A;
+    font-size: 1em;
+}
+.aside-content {
+    top: 10em;
+    left: 10em;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+#aside {
+    margin-left: 2em;
+    width: 50%;
+    border-image: linear-gradient(#57ADB2, #09bc8a) 30;
+    border-width: 0.1px;
+    border-style: solid;
+    border-radius: 0.1em;
+    text-align: center;
+    font-family: Source Code Pro;
+    color: #079E79;
+    font-size: 1em;
+}
+#aside h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #09bc8a;
+}
+#sectionh {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+#btn1 {
+    font-weight: 500;
+}
+article {
+    margin-top: -2em;
+}
+#tacobell {
+    padding-top: 3em;
+}
+@media only screen and (max-width: 600px) {
+    .main-content {
+        font-size: 80%;
+    }
+}
