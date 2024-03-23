@@ -21,13 +21,6 @@ html, body, .grid-container {
     min-height: 850px;
     height: auto;
 }
-.grid-item {
-    text-align: center;
-    padding: 20px;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-}
 nav ul {
     display: flex;
     list-style-type: none; /* Remove bullet points from list */
