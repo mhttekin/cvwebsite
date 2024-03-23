@@ -8,6 +8,7 @@
   grid-row-start: 3;
   grid-row-end: 6;
 }
+
 #header {
   flex: 1;
   justify-content: left;
