@@ -158,11 +158,14 @@ footer {
 article {
     margin-top: -2em;
 }
-#tacobell {
-    padding-top: 3em;
-}
 @media only screen and (max-width: 600px) {
-    .main-content {
-        font-size: 80%;
+   
+  .main-content, header-content, nav-content, footer-content, aside-content {
+        font-size: 85%;
     }
+}
+@media only screen and (max-width: 800px) {
+  #tacobell {
+    padding-top: 5.2em;
+  }
 }
