@@ -1,1 +1,80 @@
 @import "/css/style.css";
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    margin-top: -4em;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.login {
+    box-shadow: 0px 0px 1px 1px #000000;
+    background-color: #57ADB2;
+    height: 20em;
+    border-radius: 1em;
+    width: 30em;
+    padding: 1em;
+}
+.login form {
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 1em;
+}
+#input1 {
+    background-color: #BEEEEE;
+    border: none;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-family: Source Code Pro;
+}
+.uname {
+    font-size: 2em;
+}
+#tag {
+    font-size: 1.1em;
+    font-family: Asap;
+    font-weight: 500;
+}
+#check, .psw {
+    font-size: 0.9em;
+    font-family: Asap;
+}
+#logbtn, .cancelbtn {
+    border: 0;
+    font-family: Source Code Pro;
+    font-weight: 500;
+    padding: 0.3em;
+    background-image: linear-gradient(to right, #004346 0%, #058068 50%, #004346 100%);
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    /* Additional styling for aesthetics */
+    border-radius: 5px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+.container h2 {
+    font-size: 2.2em;
+    font-family: Asap;
+    font-weight: 600;
+}
+@media only screen and (max-width: 600px) {
+    .main-content {
+        font-size: 100%;
+    }
+}

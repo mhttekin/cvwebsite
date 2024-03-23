@@ -1,1 +1,38 @@
 @import "/css/style.css";
+
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    position: sticky; /* Or 'fixed', depending on the exact behavior you desire */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+.main-content{
+    margin-top: 0;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.images-row figure {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content vertically */
+    margin-top: 0;
+}
+.images-row {
+    width: 90%;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Optional: adds space between the figures */
+}
+#img1 {
+    max-width: 100%; /* Ensure the image is responsive and doesn't overflow its container */
+    height: auto; /* Maintain aspect ratio */
+}
+figcaption {
+    font-family: Source Code Pro;
+    font-size: 1em;
+    color: #FFFFFF;
+}

@@ -135,7 +135,7 @@ footer {
     margin-left: 2em;
     width: 50%;
     border-image: linear-gradient(#57ADB2, #09bc8a) 30;
-    border-width: 0.1px;
+    border-width: 0.15em;
     border-style: solid;
     border-radius: 0.1em;
     text-align: center;
