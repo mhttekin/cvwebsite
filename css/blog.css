@@ -64,6 +64,7 @@
   background-color: white;
   border-radius: 1em;
   box-shadow: 1em;
+  height: 100%;
 }
 
 #bc1 {
@@ -87,21 +88,20 @@
 }
 .content-panel{
   flex: 2;
-  height: 70%;
+  overflow: hidden;
+  height: 65%;
 }
 .description-bar {
-  background-color: #317CCF;
-  filter: blur(0.60px);
+  background-color: rgba(49,124,207);
   flex: 1;
-  height: 30%;
+  height: 35%;
   font-family: Outfit;
   color: #A9C2EF;
   border-radius: 0.2em;
   box-shadow: 1em;
-
-  
 }
 .description-bar h2{
+  background-color: rgba(109, 159, 223, 1);
   width: 100%;
   font-weight: 700; 
   font-size: 2.4em;
@@ -110,6 +110,14 @@
   box-shadow: 1em;
 }
 .description-bar p {
-  font-size: 1em;
+  font-size: 1.1em;
   
+}
+.image-block {
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/blog1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
