@@ -27,7 +27,7 @@
         </div>
         <div class="main-content">
             <div class="login">
-                <form action="/action_page.php">
+                <form action="php/login.php" method="post">
                     <div class="container">
                         <h2>Sign in to blog</h2>
                         <label for="uname" id="tag"><b>Username</b></label>
