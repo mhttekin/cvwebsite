@@ -1,9 +1,8 @@
-
 <?php
 $host = 'localhost';
 $dbname = 'blogDB';
-$username = 'root';
-$password = '';
+$username = 'appuser';
+$password = 'user_password';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
