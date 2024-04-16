@@ -1,0 +1,99 @@
+@import "/css/style.css";
+
+.main-content {
+  margin-top: -8.8em;
+  display:flex;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+#header {
+  flex: 1;
+  justify-content: left;
+  width:25em;
+}
+#navbar {
+  flex: 2;
+  text-align: center;
+}
+#navbar ul li{
+  border-right: solid 1px black;
+  padding-right: 1em;
+}
+#navbar ul li:last-child {
+  border: 0;
+}
+.header-content {
+  box-shadow: 1em;
+  background-color: #6261BD;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 4em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+#header h1 {
+  color: white;
+  font-family: Outfit;
+  font-weight: 600;
+  font-size: 2.4em;
+  padding-bottom: 0;
+}
+
+.blog-container {
+  margin-top: -5em;
+  position: relative;
+  width: 100%;
+  background-color: #C1DBE3;
+  
+}
+
+.menu-bar {
+  width:100%;
+  min-height: 3em;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #FFFFFF;
+  
+}
+.welcome-chart {
+  font-family: Outfit;
+  font-size: 1.2em;
+  color: #598C54;
+  width: 50%;
+}
+.welcome-chart h1 {
+  padding-top: 0.30em;
+  font-size: 1.4em;
+  text-align: center;
+  font-weight: 500;
+}
+.button-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 15px;
+  width: 50%;
+  border: 0;
+
+}
+.button-panel button {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #373737;
+  width: 2.5em;
+  margin: 0.18em;
+  border-radius: 0;
+  border: 0;
+  background-color: #FCE694; 
+}
+.button-panel button:last-child {
+  font-size: 1em;
+  width: 5em;
+  margin: 0.25em;
+}

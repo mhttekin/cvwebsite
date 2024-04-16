@@ -1,10 +1,6 @@
 <?php
 session_start();
 
-if(!isset($_SESSION['user_id'])) {
-  header('Location: blog.html');
-  exit();
-}
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +14,7 @@ if(!isset($_SESSION['user_id'])) {
       <script src="/js/blogpage.js"></script>
    </head>
    <body>
-      <div class="grid-container">
+     <div class="grid-container">
          <div class="header-content">
             <header id="header">
                <h1>mhtblog</h1>
@@ -34,22 +30,9 @@ if(!isset($_SESSION['user_id'])) {
             </nav>
          </div>
          <div class="main-content">
-            <div class="blog-container">
-               <div class="menu-bar">
-                  <div class="welcome-chart">
-                  <h1>Welcome, <?php echo htmlspecialchars($_SESSION['username'] ?? 'Guest'); ?></h1>
-                  </div>
-                  <div class="button-panel">
-                     <button id="addBtn">+</button>
-                     <button id="logoff">Log Out</button>
-                  </div>
-               </div>
-               <div class="content-space">
-               
-               </div>
-
-            </div>
          </div>
-      </div>
+     </div>
+    
    </body>
 </html>
+
