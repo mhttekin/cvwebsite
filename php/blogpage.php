@@ -14,8 +14,7 @@ if(!isset($_SESSION['user_id'])) {
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Blog Page</title>
       <link href="/css/reset.css" rel="stylesheet" type="text/css">
-      <link href="/css/blogphp.css" rel="stylesheet" type="text/css" media="screen">
-      <script src="/js/blogpage.js"></script>
+      <link href="/css/blogphp.css" rel="stylesheet" type="text/css" media="screen"> 
    </head>
    <body>
       <div class="grid-container">
@@ -51,5 +50,6 @@ if(!isset($_SESSION['user_id'])) {
             </div>
          </div>
       </div>
+      <script src="/js/blogpage.js"></script>
    </body>
 </html>

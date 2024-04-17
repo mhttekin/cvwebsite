@@ -97,3 +97,53 @@
   width: 5em;
   margin: 0.25em;
 }
+.postForm {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1em;
+  margin-left: 10%;
+  font-family: Outfit;
+  color: #373737;
+  background-color: #FCE694;
+}
+.postForm h2 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 0.3em;
+}
+#form1 {
+  height:100%;
+}
+.postForm input {
+  border: 0;
+  border-radius: 0;
+  margin-left: 1em;
+  margin-right: 1em;
+  height: 2.5em;
+}
+#big1 {
+  height: 15em;
+  margin-top: 0;
+}
+#postc {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+#postc button {
+  border: 0;
+  border-radius: 0;
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-family: Outfit;
+  font-weight: 400;
+  background-color: #C8B56A;
+}
