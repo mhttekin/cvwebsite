@@ -44,7 +44,29 @@ if(!isset($_SESSION['user_id'])) {
                   </div>
                </div>
                <div class="content-space">
-               
+                  <?php
+                     require 'dbconnect.php';
+                     try {
+                        $stmt = $pdo->prepare("SELECT * FROM posts ORDER BY post_id DESC"); // Fetch posts in descending order by post_id
+                        $stmt->execute();
+
+                        if ($stmt->rowCount() > 0) {
+                           while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                              echo "<div class='post'>";
+                              echo "<h2>" . htmlspecialchars($row['title']) . "</h2>";
+                              echo "<p>" . nl2br(htmlspecialchars($row['content'])) . "</p>";
+                              echo "<small>Posted by User ID: " . htmlspecialchars($row['user_id']) . "</small>";
+                              echo "</div>";
+                           }
+                        } 
+                        else {
+                           echo "<p>No posts found.</p>";
+                        }
+                     }
+                     catch (PDOException $e) {
+                       echo "Error fetching posts: " . $e->getMessage();
+                     }
+                ?>
                </div>
 
             </div>
