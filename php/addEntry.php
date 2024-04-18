@@ -33,9 +33,9 @@ session_start();
                   <div class="postForm">
                      <h2>Add your post</h2>
                      <label for="title">Title of the post</label>
-                     <input type="text" placeholder="Title" name="title" id="title" required>
+                     <input type="text" placeholder="Title" name="title" id="title">
                      <label for="content">Content of the post</label>
-                     <input type="text" placeholder="Write something..." name="content" id="big1" required>
+                     <input type="text" placeholder="Write something..." name="content" id="big1">
                      <div id="postc">
                         <button type="submit">POST</button>
                         <button type="button" id="clearb">CLEAR</button>

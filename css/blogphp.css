@@ -119,8 +119,12 @@
 #form1 {
   height:100%;
 }
+.hiya {
+  border: 2px solid red !important;
+}
+
 .postForm input {
-  border: 0;
+  border:0;
   border-radius: 0;
   margin-left: 1em;
   margin-right: 1em;
@@ -147,18 +151,12 @@
   font-weight: 400;
   background-color: #C8B56A;
 }
-
-.hiya {
-  border: 1.7px solid red;
-  
-}
-
 .post {
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #FFFFFF;
+    background-color: #0ff9f9;
     font-family: Outfit;
 }
 
