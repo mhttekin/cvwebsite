@@ -120,7 +120,7 @@
   height:100%;
 }
 .hiya {
-  border: 2px solid red !important;
+  border: 1.7px solid red !important;
 }
 
 .postForm input {
@@ -146,7 +146,7 @@
   border-radius: 0;
   padding: 1em;
   padding-left: 2em;
-  padding-right: 2em;
+  padding-right: mhtblog2em;
   font-family: Outfit;
   font-weight: 400;
   background-color: #C8B56A;
@@ -156,7 +156,7 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #0ff9f9;
+    background-color: #FFFFFF;
     font-family: Outfit;
 }
 
