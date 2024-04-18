@@ -21,9 +21,9 @@ if ($user && password_verify($password, $user['password'])) {
   header("Location: blogpage.php");
   exit;
 } else {
-    echo "Invalid username or password!";
+  header("Location: /blog.html");
+  exit;
 }
 
-var_dump($user);  
 ?>
 
