@@ -47,7 +47,7 @@ if(!isset($_SESSION['user_id'])) {
                   <?php
                      require 'dbconnect.php';
                      try {
-                        $stmt = $pdo->prepare("SELECT * FROM posts ORDER BY post_id DESC"); // Fetch posts in descending order by post_id
+                        $stmt = $pdo->prepare("SELECT * FROM posts ORDER BY post_id DESC");
                         $stmt->execute();
 
                         if ($stmt->rowCount() > 0) {
@@ -66,9 +66,8 @@ if(!isset($_SESSION['user_id'])) {
                      catch (PDOException $e) {
                        echo "Error fetching posts: " . $e->getMessage();
                      }
-                ?>
+                  ?>
                </div>
-
             </div>
          </div>
       </div>

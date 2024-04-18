@@ -1,17 +1,40 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-  console.log("DOM fully loaded and parsed");
+  const form = document.getElementById('form1');
+  const title = document.getElementById('title');
+  const content = document.getElementById('big1');
 
-  const clearButton = document.getElementById('clearb');
-    if (clearButton) {
-    clearButton.addEventListener('click', function(event) {
+  form.addEventListener('submit', function(event) {
+    let formValid = true;
+    if(title.value.trim() === '') {
+      title.classList.add('hiya');
+      formValid = false;
+    } else {
+      titleInput.classList.remove('hiya');
+    }
+    if(content.value.trim() === '') {
+      content.classList.add('hiya');
+      formValid = false;
+    } else {
+      content.classList.remove('hiya');
+    }
+    if(!formValid) {
       event.preventDefault();
-      console.log("Clear button clicked");
+      alert('Fill the highlighted areas.');
+    }
+
+  });
+
+  const clearB = document.getElementById('clearb');
+    if (clearB) {
+    clearB.addEventListener('click', function(event) {
+      event.preventDefault();
       const confirmClear = confirm('Are you sure you want to clear everything?');
       if (confirmClear) {
-        
-        document.getElementById('title').value = ''; 
-        document.getElementById('big1').value = ''; 
+        title.value = '';
+        content.value = '';
+        title.classList.remove('hiya');
+        content.classList.remove('hiya');
       }
     });
   }

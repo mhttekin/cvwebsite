@@ -148,16 +148,22 @@
   background-color: #C8B56A;
 }
 
+.hiya {
+  border: 1.7px solid red;
+  
+}
+
 .post {
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: #FFFFFF;
+    font-family: Outfit;
 }
 
 .post h2 {
-    color: #333;
+   font-size: 1.3em;
 }
 
 .post p {
